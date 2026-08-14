@@ -26,6 +26,7 @@ def browseInput():
             ("MP4 Video", "*.mp4"),
             ("MKV Video", "*.mkv"),
             ("AVI Video", "*.avi"),
+            ("WEBM Video", "*.webm"),
             ("QuickTime Video", "*.mov")
         ]
     )
@@ -40,6 +41,7 @@ def browseOutput():
             ("MP4 Video", "*.mp4"),
             ("MKV Video", "*.mkv"),
             ("AVI Video", "*.avi"),
+            ("WEBM Video", "*.webm"),
             ("QuickTime Video", "*.mov")
         ]
     )
