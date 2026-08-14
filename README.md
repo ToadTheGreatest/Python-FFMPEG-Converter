@@ -8,10 +8,12 @@ Run this
 pip install python-ffmpeg
 ```
 
-This lets this not crash
-```python
-import ffmpeg
+You might have to run
+```powershell
+python -m pip uninstall ffmpeg python-ffmpeg ffmpeg-python
+pip install python-ffmpeg
 ```
+to let ffmpeg work, because there are two ffmpeg libraries.
 
 You need FFMPEG installed on your PC
 [FFMPEG Download](https://ffmpeg.org/download.html)
