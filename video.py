@@ -4,7 +4,7 @@ from tkinter import filedialog
 import math
 
 def log(text):
-    print(text)
+    logLabel.config(text=text)
 
 def convertTo(inputpath, outputpath):
     try:
@@ -70,5 +70,7 @@ for x in widgets:
 
 goButton = tkinter.Button(window, text="Convert", command=startConvert)
 goButton.grid(row=math.floor(index / 3),column=0, columnspan=3)
+logLabel = tkinter.Button(window)
+logLabel.grid(row=math.floor(index / 3) + 1,column=0, columnspan=3)
 
 window.mainloop()
