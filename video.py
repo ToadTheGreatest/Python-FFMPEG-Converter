@@ -8,7 +8,13 @@ def log(text):
 
 def convertTo(inputpath, outputpath):
     try:
-        ffmpeg.input(inputpath).output(outputpath, vcodec="libx264", acodec="aac").overwriteOutput().run(capture_stdout=True, capture_stderr=True)
+        (
+            ffmpeg
+            .input(inputpath)
+            .output(outputpath, vcodec="libx264", acodec="aac")
+            .overwriteOutput()
+            .run(capture_stdout=True, capture_stderr=True)
+        )
         log(f"Success! File saved at {outputpath}")
     except Exception as e:
         log(f"ERROR: {e}")
