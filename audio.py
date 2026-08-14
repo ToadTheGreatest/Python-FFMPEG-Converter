@@ -32,7 +32,7 @@ def browseOutput():
     path = filedialog.asksaveasfilename(
         title="Save Output Audio",
         filetypes=[
-            ("Audio Files", "*.jpeg *.jpg *.png *.apng *.webp *.gif *.tiff *.bmp")
+            ("Audio Files", "*.mp3 *.aac *.adts *.wav *.flac *.ogg *.oga *.wma *.aiff")
         ]
     )
     widgets[4].delete(0, tkinter.END)
