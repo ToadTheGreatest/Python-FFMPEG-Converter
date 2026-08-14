@@ -7,3 +7,8 @@ Run this
 ```powershell
 pip install python-ffmpeg
 ```
+
+This lets this not crash
+```python
+import ffmpeg
+```
