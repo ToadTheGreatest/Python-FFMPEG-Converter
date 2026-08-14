@@ -4,6 +4,6 @@ The UI uses tkinter, common in python library collections
 
 # SETUP
 Run this
-```Powershell
+```powershell
 pip install python-ffmpeg
 ```
