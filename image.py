@@ -22,7 +22,7 @@ def browseInput():
     path = filedialog.askopenfilename(
         title="Select Input Image",
         filetypes=[
-            ("Image Files", "*.mp4 *.mkv *.avi *.mov *.flv *.wmv *.webm *.m4v")
+            ("Image Files", "*.jpeg *.jpg *.png *.apng *.webp *.gif *.tiff *.bmp")
         ]
     )
     widgets[1].delete(0, tkinter.END)
