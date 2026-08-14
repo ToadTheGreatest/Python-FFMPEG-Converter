@@ -20,9 +20,9 @@ def convertTo(inputpath, outputpath):
 
 def browseInput():
     path = filedialog.askopenfilename(
-        title="Select Input Video",
+        title="Select Input Audio",
         filetypes=[
-            ("Video Files", "*.mp4 *.mkv *.avi *.mov *.flv *.wmv *.webm *.m4v")
+            ("Audio Files", "*.mp3 *.aac *.adts *.wav *.flac *.ogg *.oga *.wma *.aiff")
         ]
     )
     widgets[1].delete(0, tkinter.END)
@@ -30,9 +30,9 @@ def browseInput():
 
 def browseOutput():
     path = filedialog.asksaveasfilename(
-        title="Save Output Video",
+        title="Save Output Audio",
         filetypes=[
-            ("Video Files", "*.mp4 *.mkv *.avi *.mov *.flv *.wmv *.webm *.m4v")
+            ("Audio Files", "*.jpeg *.jpg *.png *.apng *.webp *.gif *.tiff *.bmp")
         ]
     )
     widgets[4].delete(0, tkinter.END)
@@ -44,7 +44,7 @@ def startConvert():
     convertTo(inputf, output)
 
 window = tkinter.Tk()
-window.title("Convert Video")
+window.title("Convert Audio")
 
 widgets = [
     tkinter.Label(window, text="Input path"),
