@@ -12,8 +12,7 @@ def convertTo(inputpath, outputpath):
             ffmpeg
             .input(inputpath)
             .output(outputpath, vcodec="libx264", acodec="aac")
-            .overwriteOutput()
-            .run(capture_stdout=True, capture_stderr=True)
+            .run(capture_stdout=True, capture_stderr=True, overwrite_output=True)
         )
         log(f"Success! File saved at {outputpath}")
     except Exception as e:
