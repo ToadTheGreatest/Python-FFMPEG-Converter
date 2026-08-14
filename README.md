@@ -12,3 +12,6 @@ This lets this not crash
 ```python
 import ffmpeg
 ```
+
+You need FFMPEG installed on your PC
+ffmpeg.org/download.html
