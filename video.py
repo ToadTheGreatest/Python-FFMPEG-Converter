@@ -22,7 +22,7 @@ def browseInput():
     path = filedialog.askopenfilename(
         title="Select Input Video",
         filetypes=[
-            ("Video Files", "*.mp4 *.mkv *.avi *.mov *.flv *.wmv *.webm *.m4v")
+            ("Video Files", "*.mp4 *.mkv *.avi *.mov *.flv *.wmv *.webm *.m4v *.gif")
         ]
     )
     widgets[1].delete(0, tkinter.END)
@@ -32,7 +32,7 @@ def browseOutput():
     path = filedialog.asksaveasfilename(
         title="Save Output Video",
         filetypes=[
-            ("Video Files", "*.mp4 *.mkv *.avi *.mov *.flv *.wmv *.webm *.m4v")
+            ("Video Files", "*.mp4 *.mkv *.avi *.mov *.flv *.wmv *.webm *.m4v *.gif")
         ]
     )
     widgets[4].delete(0, tkinter.END)
